@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康経営から、人生支援経営へ。｜人生支援経営協会</title>
+<meta name="description" content="健康経営はもう古い。社員の身体だけじゃなく、人生まで支える時代へ。健康経営と人生支援経営の決定的な違いを徹底比較。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold-1:#fff6c2;--gold-2:#ffe27a;--gold-3:#f5b921;--gold-4:#b6841a;--gold-5:#7a4f08;
+  --fire-1:#ffe27a;--fire-2:#ff8a1c;--fire-3:#e23a0e;--fire-4:#7a0a0a;
+  --blue-1:#7fc8ff;--blue-2:#1f7be6;--blue-3:#0a2a6b;
+  --bg-1:#04060d;--bg-2:#0a0d18;--bg-3:#13182a;
+  --line:#2a2f45;--text:#f3eedf;--muted:#b9b29a;--grey-text:#7a7560;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-1);color:var(--text);font-family:"Noto Sans JP","Noto Serif JP",sans-serif;line-height:1.8;overflow-x:hidden}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.serif{font-family:"Noto Serif JP",serif}
+.gold-text{
+  background:linear-gradient(180deg,#fff7c8 0%,#ffe27a 25%,#f5b921 55%,#b6841a 80%,#7a4f08 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  text-shadow:0 0 30px rgba(255,200,80,.25);filter:drop-shadow(0 2px 1px rgba(0,0,0,.6));
+}
+.fire-text{
+  background:linear-gradient(180deg,#fff2a8 0%,#ffd24a 30%,#ff7a1c 65%,#e23a0e 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 20px rgba(255,120,30,.45)) drop-shadow(0 2px 1px rgba(0,0,0,.6));
+}
+.grey-text{color:#9b9580}
+.divider-gold{height:2px;background:linear-gradient(90deg,transparent,rgba(245,185,33,0) 0%,rgba(245,185,33,.9) 50%,rgba(245,185,33,0) 100%);margin:48px auto;width:80%}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(10px);background:linear-gradient(180deg,rgba(4,6,13,.85),rgba(4,6,13,.55));border-bottom:1px solid rgba(245,185,33,.18)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{height:46px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.6))}
+.brand .b-text{font-family:"Noto Serif JP",serif;font-weight:700;font-size:15px;letter-spacing:.06em}
+.brand .b-text small{display:block;font-size:10px;color:var(--gold-2);letter-spacing:.18em}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:#e8dfb8;text-decoration:none;font-size:13px;letter-spacing:.08em;transition:.25s}
+.nav-links a:hover{color:var(--gold-2)}
+.nav-cta{
+  padding:11px 24px;border-radius:999px;
+  background:linear-gradient(180deg,#fff7c8 0%,#ffe27a 45%,#ffd24a 100%);
+  color:#1a0e00 !important;
+  -webkit-text-fill-color:#1a0e00 !important;
+  font-weight:900;font-size:14px;letter-spacing:.1em;text-decoration:none;
+  text-shadow:0 1px 0 rgba(255,255,255,.55);
+  border:1px solid rgba(180,120,15,.6);
+  box-shadow:
+    0 4px 16px rgba(245,185,33,.5),
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -1px 0 rgba(180,120,15,.25);
+}
+.nav-cta:hover{
+  background:linear-gradient(180deg,#fff 0%,#fff2a8 45%,#ffd24a 100%);
+  filter:brightness(1.05);
+  color:#1a0e00 !important;
+  -webkit-text-fill-color:#1a0e00 !important;
+}
+.hamburger{display:none;width:42px;height:42px;background:transparent;border:1px solid var(--gold-3);border-radius:8px;cursor:pointer;padding:0;position:relative;z-index:120;flex-shrink:0;margin-left:8px}
+.hamburger span{display:block;position:absolute;left:9px;right:9px;height:2px;background:var(--gold-2);transition:transform .35s ease,opacity .25s ease,top .25s ease}
+.hamburger span:nth-child(1){top:13px}
+.hamburger span:nth-child(2){top:20px}
+.hamburger span:nth-child(3){top:27px}
+.hamburger.open span:nth-child(1){top:20px;transform:rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){top:20px;transform:rotate(-45deg)}
+.mobile-nav{position:fixed;inset:0;background:linear-gradient(160deg,#04060d 0%,#1a0a06 100%);z-index:115;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+.mobile-nav.open{opacity:1;visibility:visible;transition:opacity .45s ease}
+.mobile-nav a{font-family:"Noto Serif JP",serif;font-size:20px;font-weight:700;color:#f3eedf;text-decoration:none;letter-spacing:.16em;padding:8px 20px;transform:translateY(18px);opacity:0;transition:transform .6s ease,opacity .6s ease,color .25s ease}
+.mobile-nav.open a{transform:translateY(0);opacity:1}
+.mobile-nav.open a:nth-child(1){transition-delay:.1s}
+.mobile-nav.open a:nth-child(2){transition-delay:.2s}
+.mobile-nav.open a:nth-child(3){transition-delay:.3s}
+.mobile-nav.open a:nth-child(4){transition-delay:.4s}
+.mobile-nav a.cta{margin-top:16px;padding:16px 36px;background:linear-gradient(180deg,#ffe27a,#f5b921);color:#000;border-radius:999px;font-weight:900;box-shadow:0 8px 24px rgba(245,185,33,.4)}
+.mobile-nav .deco{position:absolute;top:22px;left:24px;font-family:"Cinzel",serif;font-size:12px;letter-spacing:.4em;color:var(--gold-3)}
+@media(max-width:780px){.nav-links{display:none}.hamburger{display:block}}
+
+/* TICKER */
+.ticker{position:fixed;top:74px;left:0;right:0;z-index:48;background:linear-gradient(90deg,#080a18,#0a0d18,#080a18);border-bottom:1px solid rgba(245,185,33,.22);border-top:1px solid rgba(245,185,33,.18);overflow:hidden;height:34px;display:flex;align-items:center;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.ticker-track{display:inline-flex;white-space:nowrap;gap:60px;padding-left:100%;animation:ticker 55s linear infinite;font-family:"Cinzel",serif;font-weight:700;font-size:12px;letter-spacing:.32em;color:var(--gold-2)}
+.ticker-track .dot{color:var(--fire-2);margin:0 10px}
+.ticker-track .em{color:#fff;text-shadow:0 0 14px rgba(255,200,80,.5)}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+@media(max-width:780px){.ticker{height:28px}.ticker-track{font-size:10px;animation-duration:45s}}
+body.has-ticker .hero{padding-top:170px}
+@media(max-width:780px){body.has-ticker .hero{padding-top:160px}}
+
+/* HERO */
+.hero{
+  position:relative;min-height:100vh;padding:140px 0 90px;
+  background:
+    /* 上下を暗くして本文の可読性を確保するオーバーレイ */
+    linear-gradient(180deg,rgba(4,6,13,.55) 0%,rgba(4,6,13,.15) 35%,rgba(4,6,13,.0) 50%,rgba(26,10,6,.35) 100%),
+    /* メインの炎フォト背景 */
+    url("intro-bg.png") center bottom / cover no-repeat,
+    /* フォールバック */
+    linear-gradient(180deg,#04060d 0%,#080a18 60%,#1a0a06 100%);
+  background-color:#04060d;
+  overflow:hidden;
+}
+/* 上部にうっすらキラ星（画像と馴染む程度） */
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(2px 2px at 18% 18%,rgba(255,220,150,.55),transparent 60%),
+    radial-gradient(2px 2px at 78% 14%,rgba(255,220,150,.45),transparent 60%),
+    radial-gradient(2px 2px at 55% 8%,rgba(255,220,150,.5),transparent 60%),
+    radial-gradient(2px 2px at 35% 22%,rgba(255,220,150,.4),transparent 60%);
+  pointer-events:none;animation:twinkle 6s infinite alternate ease-in-out;
+}
+@keyframes twinkle{0%{opacity:.3}100%{opacity:.9}}
+/* 炎は写真にあるので、追加の炎レイヤーは弱めの中央スポットだけに */
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:55%;
+  background:radial-gradient(ellipse at 50% 75%,rgba(255,200,80,.18),transparent 60%);
+  pointer-events:none;mix-blend-mode:screen;
+  animation:flame 4s infinite alternate ease-in-out;
+}
+@keyframes flame{0%{opacity:.7}100%{opacity:1}}
+.hero-massive{
+  position:absolute;left:50%;top:18%;transform:translateX(-50%);
+  font-family:"Cinzel",serif;font-weight:900;
+  font-size:clamp(100px,18vw,260px);line-height:.85;letter-spacing:-.04em;
+  white-space:nowrap;pointer-events:none;
+  color:transparent;-webkit-text-stroke:1px rgba(255,220,140,.22);
+  z-index:1;user-select:none;opacity:.5;
+  mix-blend-mode:screen;
+}
+.hero-massive .em{
+  -webkit-text-stroke:0;
+  background:linear-gradient(180deg,rgba(255,220,120,.25),rgba(255,140,40,.08));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:0 24px}
+.eyebrow{display:inline-block;padding:8px 22px;border-radius:999px;border:1px solid rgba(245,185,33,.45);background:linear-gradient(180deg,rgba(245,185,33,.12),rgba(245,185,33,.02));color:var(--gold-2);font-size:13px;letter-spacing:.25em;font-weight:700;margin-bottom:32px}
+.hero h1{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(34px,7vw,84px);line-height:1.22;letter-spacing:.02em;margin-bottom:24px}
+.hero h1 .strike{display:inline-block;color:#9b9580;position:relative}
+.hero h1 .strike::after{content:"";position:absolute;left:-4%;right:-4%;top:54%;height:6%;background:linear-gradient(90deg,transparent,#e23a0e,#ff8a1c,#e23a0e,transparent);transform:rotate(-3deg);box-shadow:0 0 18px rgba(226,58,14,.6)}
+.hero p.lead{
+  max-width:780px;margin:24px auto 36px;
+  font-size:clamp(15px,1.7vw,19px);color:#f1e9c8;line-height:2;
+  text-shadow:0 2px 12px rgba(0,0,0,.85),0 0 24px rgba(0,0,0,.6);
+}
+.hero h1{text-shadow:0 4px 22px rgba(0,0,0,.7)}
+.hero-cta{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;border-radius:999px;font-weight:900;letter-spacing:.1em;text-decoration:none;font-size:15px;transition:.3s;cursor:pointer;border:0}
+.btn-gold{color:#1a1000;background:linear-gradient(180deg,#fff7c8,#ffd24a 45%,#a06b0f 100%);box-shadow:0 10px 30px rgba(245,185,33,.35),0 0 0 1px rgba(255,220,120,.5),inset 0 1px 0 rgba(255,255,255,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(245,185,33,.5)}
+.btn-ghost{color:var(--gold-2);background:transparent;border:1px solid rgba(245,185,33,.55)}
+.btn-ghost:hover{background:rgba(245,185,33,.08);color:#fff}
+.scroll-indicator{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);color:var(--gold-2);font-size:11px;letter-spacing:.3em;z-index:3;animation:bob 2.2s infinite ease-in-out}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* SECTION COMMON */
+.section{padding:110px 0;position:relative}
+.sec-head{text-align:center;margin-bottom:60px}
+.sec-eyebrow{display:inline-block;font-size:12px;letter-spacing:.4em;color:var(--gold-3);font-weight:700;margin-bottom:16px}
+.sec-title{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(28px,4.5vw,52px);line-height:1.3}
+.sec-sub{margin-top:18px;color:var(--muted);font-size:15px}
+
+/* GIANT BG LABEL */
+.giant-label{position:absolute;left:0;right:0;top:-30px;font-family:"Cinzel",serif;font-weight:900;font-size:clamp(80px,18vw,260px);line-height:.85;letter-spacing:-.02em;text-align:center;pointer-events:none;color:transparent;-webkit-text-stroke:1px rgba(245,185,33,.18);white-space:nowrap;overflow:hidden;z-index:0;user-select:none;opacity:.5}
+
+/* MARK ―― 下線と完全に同じ色で文字発光（親のグラデは強制リセット） */
+.mark{
+  position:relative;display:inline-block;
+  font-weight:900;
+  padding:0 .12em 4px;
+  white-space:nowrap;line-height:1.25;
+  /* 親(.gold-text/.fire-text) のグラデ透明設定をリセット */
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  /* 文字色は下線中央色と同一 */
+  color:#ffd24a;
+  -webkit-text-fill-color:#ffd24a;
+  text-shadow:0 1px 2px rgba(0,0,0,.55);
+  z-index:0;
+  filter:none;
+}
+/* スクロールで現れるアンダーライン */
+.mark::after{
+  content:"";position:absolute;
+  left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,#fff7c8,#ffd24a 50%,#f5b921);
+  box-shadow:0 0 8px rgba(255,220,120,.9),0 0 16px rgba(245,185,33,.6);
+  border-radius:2px;
+  transform:scaleX(0);transform-origin:left center;
+  transition:transform 1s cubic-bezier(.22,.9,.3,1) .15s;
+  pointer-events:none;
+}
+.mark.in::after{transform:scaleX(1)}
+/* fire 版：下線はオレンジ→赤、文字も中央のオレンジで合わせる */
+.mark.fire{
+  color:#ff8a3c;
+  -webkit-text-fill-color:#ff8a3c;
+}
+.mark.fire::after{
+  background:linear-gradient(90deg,#ffe27a,#ff7a1c 50%,#e23a0e);
+  box-shadow:0 0 10px rgba(255,160,80,.9),0 0 20px rgba(255,120,30,.6);
+}
+
+/* MASK reveal */
+.mask-line{display:block;overflow:hidden;line-height:1.18}
+.mask-inner{display:inline-block;transform:translateY(110%);transition:transform 1s cubic-bezier(.22,.9,.3,1)}
+.mask-line.in .mask-inner{transform:translateY(0)}
+
+/* SCROLL PROGRESS */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:60;background:linear-gradient(90deg,#fff7c8,#ffd24a 30%,#ff7a1c 70%,#e23a0e);box-shadow:0 0 12px rgba(255,180,40,.7);transition:width .1s linear}
+
+/* STICKY CTA */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:49;display:flex;justify-content:center;gap:14px;padding:14px 18px 18px;pointer-events:none;transform:translateY(120%);transition:transform .5s cubic-bezier(.22,.9,.3,1);background:linear-gradient(180deg,transparent,rgba(4,6,13,.85) 30%,rgba(4,6,13,.95))}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta a{
+  pointer-events:auto;display:inline-flex;align-items:center;gap:10px;
+  padding:18px 38px;border-radius:999px;
+  font-family:"Noto Serif JP",serif;
+  font-weight:900;letter-spacing:.12em;font-size:18px;
+  text-decoration:none;
+  box-shadow:0 12px 30px rgba(0,0,0,.6);
+}
+.sticky-cta .pri{color:#1a1000;background:linear-gradient(180deg,#fff7c8,#ffd24a 45%,#a06b0f 100%);border:1px solid rgba(255,220,120,.6);box-shadow:0 12px 30px rgba(245,185,33,.4),inset 0 1px 0 rgba(255,255,255,.6)}
+.sticky-cta .sec{color:#fff1c0;background:linear-gradient(180deg,rgba(20,16,8,.95),rgba(8,6,4,.95));border:1px solid rgba(245,185,33,.5)}
+@media(max-width:560px){.sticky-cta a{padding:14px 22px;font-size:14px;letter-spacing:.06em}}
+
+/* CURSOR */
+.cursor-dot{position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle,#ffd24a 0%,rgba(255,210,74,0) 70%);pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen;opacity:0;transition:opacity .25s}
+.cursor-ring{position:fixed;top:0;left:0;width:46px;height:46px;border-radius:50%;border:1px solid rgba(245,185,33,.55);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:opacity .25s,width .2s,height .2s,border-color .2s;opacity:0;mix-blend-mode:screen}
+@media(hover:hover){.cursor-dot,.cursor-ring{opacity:.85}}
+@media(hover:none){.cursor-dot,.cursor-ring{display:none}}
+
+/* WHYNOW */
+.whynow{background:radial-gradient(ellipse at 50% 0%,rgba(245,185,33,.06),transparent 60%),linear-gradient(180deg,#04060d,#0a0d18)}
+.whynow .lede{max-width:880px;margin:0 auto 40px;text-align:center;font-size:clamp(17px,2vw,22px);color:#cfc6a4;line-height:2}
+.whynow .verdict{text-align:center;font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(28px,4.5vw,52px);line-height:1.4;letter-spacing:.04em}
+
+/* DIFF */
+.diff-section{background:radial-gradient(ellipse at 0% 50%,rgba(155,149,128,.05),transparent 50%),radial-gradient(ellipse at 100% 50%,rgba(245,185,33,.08),transparent 55%),linear-gradient(180deg,#080a18,#04060d);position:relative;overflow:hidden}
+.diff-wrap{display:grid;grid-template-columns:1fr 80px 1fr;gap:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+@media(max-width:880px){.diff-wrap{grid-template-columns:1fr;gap:0}}
+.diff-col{padding:48px 36px;position:relative}
+.diff-col.old{background:linear-gradient(180deg,rgba(28,26,22,.85),rgba(14,12,10,.95));border:1px solid rgba(155,149,128,.18)}
+.diff-col.new{background:radial-gradient(ellipse at 50% 100%,rgba(226,58,14,.18),transparent 60%),linear-gradient(180deg,rgba(20,12,4,.92),rgba(40,18,8,.95));border:1px solid rgba(245,185,33,.4)}
+.diff-col::before{content:attr(data-bg);position:absolute;top:8px;left:0;right:0;font-family:"Cinzel",serif;font-weight:900;font-size:clamp(60px,9vw,140px);line-height:.85;letter-spacing:-.02em;text-align:center;color:transparent;-webkit-text-stroke:1px rgba(245,185,33,.1);pointer-events:none;white-space:nowrap;overflow:hidden;z-index:0}
+.diff-col.old::before{-webkit-text-stroke:1px rgba(155,149,128,.18)}
+.diff-col>*{position:relative;z-index:1}
+.diff-arrow{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#04060d,#0a0d18);position:relative}
+.diff-arrow .a{font-family:"Cinzel",serif;font-weight:900;font-size:34px;color:var(--fire-2);text-shadow:0 0 30px rgba(255,120,30,.8);animation:pulse 2.4s infinite ease-in-out}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.08);opacity:1}}
+@media(max-width:880px){.diff-arrow{padding:18px 0}.diff-arrow .a{transform:rotate(90deg)}}
+.diff-tag{display:inline-block;padding:6px 14px;border-radius:999px;font-size:11px;letter-spacing:.3em;font-weight:900;margin-bottom:14px}
+.diff-col.old .diff-tag{background:rgba(155,149,128,.12);color:#9b9580;border:1px solid rgba(155,149,128,.3)}
+.diff-col.new .diff-tag{background:linear-gradient(180deg,rgba(245,185,33,.18),rgba(122,79,8,.18));color:var(--gold-2);border:1px solid rgba(245,185,33,.5)}
+.diff-col h3{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1.3;letter-spacing:.04em;margin-bottom:8px}
+.diff-col h3 .small{display:block;font-size:.5em;letter-spacing:.2em;margin-bottom:6px}
+.diff-col.old h3{color:#bfb597}
+.diff-col.old h3 .small{color:#9b9580}
+.diff-col .summary{font-size:14px;line-height:1.9;margin-bottom:24px}
+.diff-col.old .summary{color:#9b9580}
+.diff-col.new .summary{color:#e6dfc0}
+.diff-list{list-style:none}
+.diff-list li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed rgba(255,255,255,.07);font-size:15px;line-height:1.7}
+.diff-list li:last-child{border-bottom:0}
+.diff-list .ico{flex-shrink:0;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
+.diff-col.old .ico{background:rgba(155,149,128,.12);color:#9b9580}
+.diff-col.new .ico{background:linear-gradient(180deg,#fff7c8,#f5b921);color:#1a1000;box-shadow:0 4px 12px rgba(245,185,33,.4)}
+.diff-col.old .diff-list li{color:#a09a82}
+.diff-col.new .diff-list li{color:#e6dfc0}
+.diff-col .footer-line{margin-top:24px;padding:16px 18px;border-radius:12px;text-align:center;font-weight:900;letter-spacing:.04em}
+.diff-col.old .footer-line{background:rgba(155,149,128,.08);color:#9b9580;border:1px solid rgba(155,149,128,.25)}
+.diff-col.new .footer-line{background:linear-gradient(180deg,rgba(226,58,14,.18),rgba(122,10,10,.2));color:#ffd2a4;border:1px solid rgba(226,58,14,.5)}
+
+/* ROW DIFF */
+.row-diffs{margin-top:80px;display:flex;flex-direction:column;gap:18px}
+.row-diff{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;gap:0;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(15,18,30,.85),rgba(6,8,16,.95));border:1px solid rgba(245,185,33,.18)}
+@media(max-width:780px){.row-diff{grid-template-columns:1fr;gap:0}}
+.row-side{padding:22px 24px;font-size:15px}
+.row-side.old{color:#9b9580;background:rgba(155,149,128,.04);border-right:1px dashed rgba(155,149,128,.25)}
+.row-side.new{color:#fff1c0;background:linear-gradient(90deg,rgba(245,185,33,.04),rgba(245,185,33,.12));font-weight:600}
+.row-side .label{display:block;font-size:11px;letter-spacing:.25em;font-weight:900;margin-bottom:6px}
+.row-side.old .label{color:#7a7560}
+.row-side.new .label{color:var(--gold-3)}
+.row-mid{display:flex;align-items:center;justify-content:center;background:#04060d;font-family:"Cinzel",serif;color:var(--fire-2);font-size:18px;text-shadow:0 0 18px rgba(255,120,30,.7)}
+@media(max-width:780px){.row-side.old{border-right:0;border-bottom:1px dashed rgba(155,149,128,.25)}.row-mid{padding:6px 0}.row-mid::before{content:"▼"}.row-mid .a{display:none}}
+
+/* SHIFTS */
+.shifts{background:radial-gradient(ellipse at 50% 50%,rgba(245,185,33,.06),transparent 70%),linear-gradient(180deg,#04060d 0%,#1a0a06 100%);position:relative;overflow:hidden}
+.shifts::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;background:radial-gradient(ellipse at 50% 100%,rgba(255,120,30,.35),transparent 60%);pointer-events:none}
+.shift-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:2}
+@media(max-width:1080px){.shift-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.shift-grid{grid-template-columns:1fr}}
+.shift-card{position:relative;border-radius:16px;padding:32px 22px 26px;background:linear-gradient(180deg,rgba(20,16,8,.85),rgba(8,6,4,.96));border:1px solid rgba(245,185,33,.35);box-shadow:0 20px 50px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,220,120,.1);text-align:left;transition:.3s}
+.shift-card:hover{transform:translateY(-6px);border-color:rgba(245,185,33,.7)}
+.shift-card .num{font-family:"Cinzel",serif;font-weight:900;font-size:36px;background:linear-gradient(180deg,#fff7c8,#f5b921 50%,#7a4f08);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:10px}
+.shift-card .ttl-old{font-size:12px;color:#9b9580;letter-spacing:.16em;text-decoration:line-through;text-decoration-color:rgba(226,58,14,.7);text-decoration-thickness:2px;margin-bottom:8px}
+.shift-card h4{font-family:"Noto Serif JP",serif;font-weight:900;font-size:22px;letter-spacing:.04em;margin-bottom:14px;color:#fff1c0;line-height:1.4}
+.shift-card p{font-size:13px;color:#cfc6a4;line-height:1.85}
+
+/* TIMELINE ―― 時計の背景 */
+.timeline-section{
+  position:relative;
+  background:
+    /* 上下フェードで前後のセクションと自然連結＋上半分は読みやすく */
+    linear-gradient(180deg,#04060d 0%,rgba(4,6,13,.92) 6%,rgba(4,6,13,.55) 25%,rgba(4,6,13,.35) 65%,rgba(8,10,24,.92) 94%,#080a18 100%),
+    /* メイン：時計の画像 */
+    url("history-bg.png") right center / cover no-repeat,
+    linear-gradient(180deg,#04060d,#080a18);
+  background-color:#04060d;
+}
+.timeline-section::before{
+  content:"";position:absolute;inset:0;
+  /* 左側（タイムライン本体）を必ず読めるように */
+  background:linear-gradient(90deg,rgba(4,6,13,.85) 0%,rgba(4,6,13,.5) 38%,rgba(4,6,13,.05) 70%,transparent 100%);
+  pointer-events:none;
+  z-index:0;
+}
+.timeline-section .container,.timeline-section .giant-label{position:relative;z-index:1}
+
+/* BIG QUOTE ―― 稲妻ストリームを背景に */
+.image-section{
+  position:relative;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(4,6,13,.92) 0%,rgba(4,6,13,.55) 18%,rgba(4,6,13,.35) 50%,rgba(4,6,13,.6) 85%,rgba(4,6,13,.95) 100%),
+    url("hero-whynow.png") center center / cover no-repeat,
+    radial-gradient(ellipse at 50% 0%,rgba(245,185,33,.12),transparent 60%),
+    linear-gradient(180deg,#04060d,#080a18);
+  background-color:#04060d;
+}
+.image-section::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 50%,rgba(4,6,13,.0) 30%,rgba(4,6,13,.55) 80%);
+  pointer-events:none;z-index:0;
+}
+.image-section .bigquote{position:relative;z-index:1}
+.timeline{position:relative;max-width:920px;margin:0 auto;padding:30px 0}
+.timeline::before{content:"";position:absolute;left:24px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,rgba(155,149,128,.4),var(--gold-3),var(--fire-2))}
+.t-item{position:relative;padding:20px 0 30px 70px}
+.t-item .dot{position:absolute;left:14px;top:24px;width:22px;height:22px;border-radius:50%;background:linear-gradient(180deg,#fff7c8,#f5b921);box-shadow:0 0 0 6px rgba(245,185,33,.15),0 6px 18px rgba(245,185,33,.4);z-index:2}
+.t-item.past .dot{background:#3a3528;box-shadow:0 0 0 6px rgba(155,149,128,.15)}
+.t-item .era{font-family:"Cinzel",serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:var(--gold-3);margin-bottom:6px}
+.t-item.past .era{color:#7a7560}
+.t-item .title{font-family:"Noto Serif JP",serif;font-weight:900;font-size:22px;letter-spacing:.04em;color:#fff1c0;margin-bottom:8px}
+.t-item.past .title{color:#9b9580;text-decoration:line-through;text-decoration-color:rgba(155,149,128,.5)}
+.t-item p{font-size:14px;color:#cfc6a4;line-height:1.9}
+.t-item.past p{color:#7a7560}
+
+/* PHILOSOPHY */
+.philosophy{background:radial-gradient(ellipse at 100% 0%,rgba(31,123,230,.08),transparent 55%),linear-gradient(180deg,#080a18,#04060d)}
+.phil-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}
+@media(max-width:880px){.phil-grid{grid-template-columns:1fr}}
+.phil-card{position:relative;padding:36px 30px;border-radius:18px;background:linear-gradient(180deg,rgba(15,18,30,.92),rgba(6,8,16,.96));border:1px solid rgba(245,185,33,.25);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.phil-card .q{font-family:"Cinzel",serif;font-weight:900;font-size:60px;color:rgba(245,185,33,.18);line-height:1;margin-bottom:6px}
+.phil-card h4{font-family:"Noto Serif JP",serif;font-weight:900;font-size:24px;margin-bottom:16px;letter-spacing:.04em}
+.phil-card p{color:#cfc6a4;font-size:15px;line-height:2}
+.phil-card .key{display:inline-block;margin-top:14px;padding:8px 14px;border-radius:999px;background:linear-gradient(180deg,rgba(245,185,33,.18),rgba(122,79,8,.12));border:1px solid rgba(245,185,33,.45);color:var(--gold-2);font-size:12px;font-weight:900;letter-spacing:.16em}
+
+/* BIG QUOTE */
+.image-section{background:radial-gradient(ellipse at 50% 0%,rgba(245,185,33,.1),transparent 60%),linear-gradient(180deg,#04060d,#080a18);padding:90px 0}
+.bigquote{text-align:center;font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(22px,3.4vw,40px);line-height:1.6;letter-spacing:.04em;max-width:1000px;margin:0 auto;padding:0 20px}
+.bigquote .kicker{display:block;font-size:.55em;color:var(--gold-3);letter-spacing:.3em;margin-bottom:18px;font-weight:700}
+
+/* FINAL CTA */
+.final-cta{background:radial-gradient(ellipse at 50% 100%,rgba(226,58,14,.55),transparent 60%),radial-gradient(ellipse at 50% 0%,rgba(245,185,33,.18),transparent 55%),linear-gradient(180deg,#080404,#1a0a06);padding:120px 0;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(2px 2px at 30% 40%,rgba(255,220,150,.6),transparent 60%),radial-gradient(2px 2px at 70% 30%,rgba(255,220,150,.5),transparent 60%)}
+.final-cta h2{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(32px,5.5vw,68px);line-height:1.25;letter-spacing:.04em;position:relative;z-index:2}
+.final-cta .sub{margin-top:20px;color:#e6cf95;font-size:16px;letter-spacing:.1em;position:relative;z-index:2}
+.final-cta .actions{margin-top:40px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+
+/* ABOUT */
+.about{background:linear-gradient(180deg,#04060d,#0a0d18);padding:80px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;align-items:center}
+@media(max-width:880px){.about-grid{grid-template-columns:1fr}}
+.about-logo{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(245,242,232,.92));border-radius:18px;padding:32px;text-align:center;border:1px solid rgba(245,185,33,.4);box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.about-logo img{max-width:280px;margin:0 auto}
+.about h3{font-family:"Noto Serif JP",serif;font-size:28px;font-weight:900;margin-bottom:18px}
+.about p{color:#cfc6a4;font-size:15px;line-height:2.1;margin-bottom:14px}
+
+/* FOOTER */
+footer{background:#02030a;border-top:1px solid rgba(245,185,33,.18);padding:50px 0 100px;text-align:center}
+footer .brand{justify-content:center;margin-bottom:18px}
+footer .copyright{color:#7a7560;font-size:12px;letter-spacing:.1em}
+footer .links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+footer .links a{color:#bfb597;text-decoration:none;font-size:13px;letter-spacing:.1em}
+footer .links a:hover{color:var(--gold-2)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ====================================================
+   MOBILE OPTIMIZATION OVERRIDES
+   ==================================================== */
+@media (max-width: 780px) {
+  /* 改行制御 */
+  body { word-break: auto-phrase; overflow-wrap: anywhere; }
+  h1, h2, h3, h4, p, .hero h1, .hero p.lead, .bigquote, .shift-card h4,
+  .shift-card p, .phil-card h4, .phil-card p, .t-item .title, .t-item p,
+  .lead-jp, .body-jp { word-break: keep-all; overflow-wrap: break-word; text-wrap: pretty; }
+
+  /* コンテナ余白 */
+  .container { padding: 0 18px; }
+
+  /* HERO：写真の中央が見えるように＋余白圧縮 */
+  .hero { padding: 130px 0 60px; min-height: auto; }
+  .hero { background-position: 50% center !important; }
+  body.has-ticker .hero { padding-top: 140px; }
+  .hero-massive { font-size: clamp(80px, 22vw, 160px); top: 22%; }
+  .hero h1 { font-size: clamp(26px, 7.2vw, 48px); line-height: 1.4; margin-bottom: 18px; }
+  .hero p.lead { font-size: 15px; line-height: 1.95; }
+  .hero-cta { gap: 12px; }
+  .hero-cta .btn { padding: 14px 24px; font-size: 14px; }
+
+  /* TICKER */
+  .ticker { height: 28px; }
+  .ticker-track { font-size: 10px; animation-duration: 45s; }
+
+  /* セクション全般 */
+  .section { padding: 70px 0; }
+
+  /* WHYNOW */
+  .sec-eyebrow, .sec-num { font-size: 12px; letter-spacing: .3em; }
+  .sec-head h2, .section h2 { font-size: clamp(24px, 7vw, 38px); line-height: 1.5; }
+
+  /* DIFF / 比較 */
+  .diff-wrap { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .diff-card { padding: 28px 20px; }
+
+  /* SHIFTS */
+  .shift-grid { grid-template-columns: 1fr; gap: 14px; }
+  .shift-card { padding: 30px 22px; border-radius: 14px; }
+  .shift-card .num { font-size: 32px; }
+  .shift-card h4 { font-size: 19px; }
+  .shift-card p { font-size: 13px; }
+
+  /* TIMELINE：時計の写真が見える＋読みやすさ */
+  .timeline-section { background-position: 70% center !important; background-size: cover !important; }
+  .timeline-section::before { background: linear-gradient(180deg,rgba(4,6,13,.92) 0%,rgba(4,6,13,.78) 50%,rgba(8,10,24,.92) 100%) !important; }
+  .timeline { max-width: 100%; padding: 20px 0; }
+  .t-item { padding: 16px 0 24px 56px; }
+  .t-item .dot { width: 18px; height: 18px; left: 12px; top: 22px; box-shadow: 0 0 0 5px rgba(245,185,33,.15); }
+  .timeline::before { left: 20px; }
+  .t-item .era { font-size: 11px; }
+  .t-item .title { font-size: 19px; }
+  .t-item p { font-size: 13px; line-height: 1.85; }
+
+  /* IMAGE SECTION（big quote）：稲妻が見える */
+  .image-section { background-position: center center !important; padding: 70px 0 !important; }
+  .bigquote { font-size: clamp(18px, 5.8vw, 30px); padding: 0 16px; line-height: 1.7; }
+  .bigquote .kicker { font-size: 11px; }
+
+  /* PHILOSOPHY */
+  .phil-grid { grid-template-columns: 1fr; gap: 18px; }
+  .phil-card { padding: 28px 22px; border-radius: 14px; }
+  .phil-card h4 { font-size: 20px; }
+  .phil-card p { font-size: 14px; line-height: 1.85; }
+
+  /* GIANT LABEL（巨大背景文字） */
+  .giant-label, .timeline-label { font-size: clamp(60px, 16vw, 120px); }
+
+  /* FINAL CTA */
+  .final-cta { padding: 80px 0; }
+  .final-cta h2 { font-size: clamp(24px, 7vw, 40px); }
+  .final-cta .sub { font-size: 14px; }
+  .final-cta .actions { gap: 12px; }
+  .final-cta .btn { padding: 14px 22px; font-size: 14px; }
+
+  /* STICKY CTA */
+  .sticky-cta a { padding: 12px 18px; font-size: 13px; letter-spacing: .04em; }
+
+  /* FOOTER */
+  footer { padding: 60px 0 40px; }
+  footer .links { gap: 18px; flex-wrap: wrap; justify-content: center; font-size: 13px; }
+  .copyright { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 100px 0 40px; }
+  .section { padding: 50px 0; }
+  .container { padding: 0 14px; }
+  .hero h1 { font-size: 24px; }
+  .hero-massive { font-size: 80px; }
+  .bigquote { font-size: 18px; }
+  .t-item { padding-left: 48px; }
+  .t-item .title { font-size: 17px; }
+}
+
+/* ====================================================
+   MOBILE V2 — 横スクロール防止 + 文字溢れ防止
+   ==================================================== */
+html, body { overflow-x: hidden !important; max-width: 100vw; }
+* { max-width: 100%; }
+
+@media (max-width: 780px) {
+  /* 横はみ出しの根本対策 */
+  html, body { overflow-x: hidden !important; }
+  body { word-break: auto-phrase; overflow-wrap: anywhere; }
+
+  /* コンテナ */
+  .container { padding: 0 18px !important; max-width: 100%; }
+
+  /* HERO巨大装飾「LIFE」：縮小＆中央維持 */
+  .hero-massive {
+    font-size: clamp(48px, 16vw, 110px) !important;
+    letter-spacing: -.02em !important;
+    top: 24% !important;
+    width: 100%;
+    text-align: center;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    padding: 0 12px;
+  }
+
+  /* HERO本体 */
+  .hero { padding: 130px 0 60px !important; min-height: auto !important; }
+  body.has-ticker .hero { padding-top: 140px !important; }
+  .hero-inner { padding: 0 16px !important; }
+  .eyebrow { font-size: 11px; padding: 6px 16px; letter-spacing: .2em; margin-bottom: 24px; }
+  .hero h1 {
+    font-size: clamp(22px, 6.4vw, 36px) !important;
+    line-height: 1.45 !important;
+    margin-bottom: 18px !important;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .hero p.lead { font-size: 14px !important; line-height: 1.95; padding: 0 8px; }
+  .hero-cta { gap: 10px; flex-direction: column; align-items: stretch; padding: 0 12px; }
+  .hero-cta .btn { padding: 14px 22px; font-size: 14px; justify-content: center; width: 100%; }
+
+  /* TICKER */
+  .ticker { height: 26px; }
+  .ticker-track { font-size: 9.5px; letter-spacing: .2em; animation-duration: 50s; gap: 36px; }
+
+  /* SECTION */
+  .section { padding: 60px 0 !important; }
+  .sec-head { margin-bottom: 36px; }
+  .sec-eyebrow { font-size: 11px; letter-spacing: .3em; margin-bottom: 12px; }
+  .sec-title {
+    font-size: clamp(22px, 6.5vw, 34px) !important;
+    line-height: 1.45 !important;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    padding: 0 8px;
+  }
+  .sec-sub { font-size: 13px; line-height: 1.85; padding: 0 12px; }
+
+  /* GIANT LABEL（背景の透かし大文字）：はみ出し防止 */
+  .giant-label {
+    font-size: clamp(48px, 14vw, 100px) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    width: 100vw;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    text-align: center;
+    top: -10px !important;
+  }
+
+  /* MARK（黄色マーカーハイライト）：折り返し可能に */
+  .mark {
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.5;
+    padding: 0 .08em;
+  }
+
+  /* WHYNOW */
+  .whynow .lede { font-size: 14px !important; line-height: 1.95; padding: 0 8px; margin-bottom: 24px; }
+  .whynow .verdict { font-size: clamp(20px, 6vw, 32px) !important; line-height: 1.5; padding: 0 8px; }
+
+  /* DIFF / 比較カード */
+  .diff-wrap { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .diff-col { padding: 28px 18px !important; }
+  .diff-col::before { font-size: clamp(40px, 12vw, 100px) !important; }
+  .diff-col h3 { font-size: clamp(18px, 5vw, 26px) !important; line-height: 1.45; word-break: keep-all; }
+  .diff-col p, .diff-col ul li { font-size: 13px !important; line-height: 1.85; }
+  .diff-arrow { padding: 14px 0 !important; }
+  .diff-arrow .a { font-size: 24px !important; transform: rotate(90deg); }
+
+  /* SHIFTS */
+  .shift-grid { grid-template-columns: 1fr !important; gap: 14px; }
+  .shift-card { padding: 28px 22px !important; border-radius: 14px; }
+  .shift-card .num { font-size: 30px; }
+  .shift-card .ttl-old { font-size: 10px; }
+  .shift-card h4 { font-size: 18px !important; line-height: 1.45; word-break: keep-all; }
+  .shift-card p { font-size: 12.5px; line-height: 1.85; }
+
+  /* TIMELINE */
+  .timeline-section { background-position: 70% center !important; background-size: cover !important; }
+  .timeline-section::before { background: linear-gradient(180deg,rgba(4,6,13,.94) 0%,rgba(4,6,13,.85) 50%,rgba(8,10,24,.95) 100%) !important; }
+  .timeline { padding: 16px 0 !important; }
+  .t-item { padding: 14px 0 22px 52px !important; }
+  .t-item .dot { width: 16px !important; height: 16px !important; left: 12px !important; top: 22px !important; box-shadow: 0 0 0 4px rgba(245,185,33,.15); }
+  .timeline::before { left: 19px !important; }
+  .t-item .era { font-size: 10.5px !important; letter-spacing: .15em; }
+  .t-item .title { font-size: 17px !important; line-height: 1.45; word-break: keep-all; }
+  .t-item p { font-size: 12.5px !important; line-height: 1.85; }
+
+  /* IMAGE-SECTION（big quote） */
+  .image-section { background-position: center center !important; padding: 60px 0 !important; }
+  .bigquote { font-size: clamp(16px, 5.2vw, 26px) !important; line-height: 1.7 !important; padding: 0 14px !important; }
+  .bigquote .kicker { font-size: 10.5px; letter-spacing: .25em; margin-bottom: 12px; }
+
+  /* PHILOSOPHY */
+  .phil-grid { grid-template-columns: 1fr !important; gap: 16px; }
+  .phil-card { padding: 26px 20px !important; border-radius: 14px; }
+  .phil-card .q { font-size: 44px; }
+  .phil-card h4 { font-size: 18px !important; line-height: 1.45; word-break: keep-all; }
+  .phil-card p { font-size: 13px; line-height: 1.85; }
+  .phil-card .key { font-size: 10.5px; padding: 6px 12px; letter-spacing: .12em; }
+
+  /* FINAL CTA */
+  .final-cta { padding: 70px 0 !important; }
+  .final-cta h2 {
+    font-size: clamp(22px, 6.4vw, 36px) !important;
+    line-height: 1.45 !important;
+    padding: 0 12px;
+    word-break: keep-all;
+  }
+  .final-cta .sub { font-size: 13px !important; padding: 0 16px; }
+  .final-cta .actions { gap: 10px; flex-direction: column; align-items: stretch; padding: 0 16px; margin-top: 30px; }
+  .final-cta .btn { padding: 14px 22px; font-size: 14px; width: 100%; justify-content: center; }
+
+  /* STICKY CTA */
+  .sticky-cta { padding: 8px 12px !important; gap: 8px !important; }
+  .sticky-cta a { padding: 11px 14px !important; font-size: 12px !important; letter-spacing: .04em !important; flex: 1; text-align: center; }
+
+  /* FOOTER */
+  footer { padding: 50px 0 30px !important; }
+  footer .container { padding: 0 18px !important; }
+  footer .brand img { height: 44px; }
+  footer .links { gap: 16px; flex-wrap: wrap; justify-content: center; font-size: 12.5px; }
+  .copyright { font-size: 10.5px; padding: 0 12px; line-height: 1.6; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px !important; }
+  .hero { padding: 110px 0 40px !important; }
+  .section { padding: 50px 0 !important; }
+  .hero-massive { font-size: clamp(40px, 13vw, 70px) !important; top: 26% !important; }
+  .hero h1 { font-size: 22px !important; }
+  .hero p.lead { font-size: 13.5px !important; }
+  .sec-title { font-size: 22px !important; }
+  .giant-label { font-size: 60px !important; }
+  .bigquote { font-size: 16px !important; }
+  .t-item { padding-left: 46px !important; }
+  .t-item .title { font-size: 16px !important; }
+  .final-cta h2 { font-size: 22px !important; }
+}
+
+/* ====================================================
+   MOBILE V3 — ヒーロー文字拡大 + ティッカー被り解消
+   ==================================================== */
+@media (max-width: 780px) {
+  /* TICKER — 文字間隔を広げ、被り防止 */
+  .ticker { height: 32px !important; }
+  .ticker-track {
+    font-size: 11px !important;
+    letter-spacing: .25em !important;
+    gap: 70px !important;
+    animation-duration: 60s !important;
+  }
+  .ticker-track .dot { margin: 0 14px !important; }
+
+  /* HERO — ティッカー直下の余白を確保 */
+  body.has-ticker .hero { padding-top: 170px !important; }
+  .hero { padding-bottom: 70px !important; }
+
+  /* ヒーロー巨大装飾「LIFE」を主役級に拡大 */
+  .hero-massive {
+    font-size: clamp(96px, 28vw, 200px) !important;
+    top: 19% !important;
+    -webkit-text-stroke: 1.2px rgba(255,220,140,.32) !important;
+    opacity: 0.7 !important;
+  }
+
+  /* ヒーロー見出し H1 を主役サイズに拡大 */
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 56px) !important;
+    line-height: 1.42 !important;
+    margin-bottom: 22px !important;
+    font-weight: 900;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* eyebrow（上のラベル）も少し大きく */
+  .eyebrow {
+    font-size: 12px !important;
+    padding: 8px 18px !important;
+    letter-spacing: .22em !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* リード文も少し大きく読みやすく */
+  .hero p.lead {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    padding: 0 6px;
+    margin: 22px auto 32px !important;
+  }
+
+  /* CTA ボタンを存在感ある大きさに */
+  .hero-cta .btn {
+    padding: 16px 28px !important;
+    font-size: 15px !important;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 480px) {
+  body.has-ticker .hero { padding-top: 160px !important; }
+  .hero-massive { font-size: clamp(80px, 26vw, 130px) !important; top: 22% !important; }
+  .hero h1 { font-size: clamp(30px, 9.5vw, 44px) !important; }
+  .hero p.lead { font-size: 14px !important; }
+  .ticker { height: 30px !important; }
+  .ticker-track { font-size: 10.5px !important; gap: 56px !important; letter-spacing: .22em !important; }
+}
+
+/* ====================================================
+   MOBILE V4 FINAL — ティッカー被り根本対策 + ヒーロー文字大型化
+   ==================================================== */
+@media (max-width: 780px) {
+  /* TICKER — グロー効果を抑え、被り解消 */
+  .ticker { height: 36px !important; padding: 2px 0 !important; }
+  .ticker-track {
+    font-size: 11.5px !important;
+    letter-spacing: .22em !important;
+    gap: 90px !important;
+    animation-duration: 70s !important;
+    align-items: center;
+  }
+  .ticker-track .dot {
+    margin: 0 0 !important;
+    font-size: 9px !important;
+    color: rgba(255,138,28,.85) !important;
+  }
+  .ticker-track .em {
+    text-shadow: none !important;
+    color: #fff !important;
+  }
+  .ticker-track span {
+    flex-shrink: 0;
+    line-height: 1;
+    padding: 0 4px;
+  }
+
+  /* HERO — テキストを主役級にスケールアップ */
+  body.has-ticker .hero { padding-top: 180px !important; }
+
+  /* メインキャッチ — はっきり大きく */
+  .hero h1 {
+    font-size: clamp(38px, 10.5vw, 64px) !important;
+    line-height: 1.45 !important;
+    font-weight: 900 !important;
+    margin-bottom: 28px !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    text-shadow: 0 4px 22px rgba(0,0,0,.85), 0 0 24px rgba(0,0,0,.5) !important;
+    letter-spacing: .02em;
+    padding: 0 4px;
+  }
+
+  /* リード文（この10年で〜）も読みやすい大きさに */
+  .hero p.lead {
+    font-size: 17px !important;
+    line-height: 2 !important;
+    padding: 0 6px !important;
+    margin: 26px auto 36px !important;
+    text-shadow: 0 2px 12px rgba(0,0,0,.9), 0 0 20px rgba(0,0,0,.7) !important;
+  }
+
+  /* 巨大装飾「LIFE」 */
+  .hero-massive {
+    font-size: clamp(110px, 32vw, 220px) !important;
+    top: 20% !important;
+    opacity: 0.55 !important;
+  }
+
+  /* mark（黄色マーカー）も少し大きく見える調整 */
+  .mark {
+    font-size: 1em !important;
+    padding: 2px .15em 6px !important;
+  }
+
+  /* eyebrow */
+  .eyebrow {
+    font-size: 12.5px !important;
+    padding: 9px 22px !important;
+    letter-spacing: .22em !important;
+    margin-bottom: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body.has-ticker .hero { padding-top: 170px !important; }
+  .hero h1 {
+    font-size: clamp(32px, 10vw, 48px) !important;
+    line-height: 1.4 !important;
+  }
+  .hero p.lead { font-size: 15.5px !important; }
+  .hero-massive { font-size: clamp(90px, 30vw, 160px) !important; top: 23% !important; }
+
+  .ticker { height: 32px !important; }
+  .ticker-track {
+    font-size: 10.5px !important;
+    gap: 70px !important;
+    letter-spacing: .2em !important;
+  }
+  .eyebrow { font-size: 11.5px !important; padding: 8px 18px !important; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 28px !important; }
+  .hero p.lead { font-size: 14.5px !important; }
+  .ticker-track { font-size: 9.5px !important; gap: 56px !important; }
+}
+
+/* ====================================================
+   FINAL DESKTOP+MOBILE FIX — ティッカー被り根絶 + ヒーロー大型化
+   全画面サイズに適用（!important で完全上書き）
+   ==================================================== */
+
+/* TICKER —— 全サイズで完全分離 */
+.ticker { height: 40px !important; padding: 4px 0 !important; }
+.ticker-track {
+  font-size: 13px !important;
+  letter-spacing: .25em !important;
+  gap: 110px !important;
+  animation-duration: 75s !important;
+  align-items: center;
+}
+.ticker-track .dot {
+  margin: 0 !important;
+  font-size: 10px !important;
+  color: rgba(255,138,28,.85) !important;
+  flex-shrink: 0;
+}
+.ticker-track .em {
+  text-shadow: none !important;
+  color: #fff !important;
+  padding: 0 6px;
+}
+.ticker-track > span {
+  flex-shrink: 0 !important;
+  line-height: 1 !important;
+  padding: 0 6px !important;
+  display: inline-block;
+}
+
+/* HERO H1 —— PCでも主役級に拡大 */
+.hero h1 {
+  font-size: clamp(38px, 8.5vw, 96px) !important;
+  line-height: 1.4 !important;
+  letter-spacing: .03em !important;
+  margin-bottom: 32px !important;
+  font-weight: 900 !important;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* HERO リード文 */
+.hero p.lead {
+  font-size: clamp(17px, 1.9vw, 22px) !important;
+  line-height: 2 !important;
+  margin: 28px auto 40px !important;
+}
+
+/* タブレット */
+@media (max-width: 1024px) {
+  .ticker-track { gap: 90px !important; font-size: 12.5px !important; }
+  .hero h1 { font-size: clamp(36px, 8vw, 72px) !important; }
+}
+
+/* スマホ */
+@media (max-width: 780px) {
+  .ticker { height: 36px !important; }
+  .ticker-track {
+    font-size: 11.5px !important;
+    gap: 80px !important;
+    letter-spacing: .22em !important;
+    animation-duration: 65s !important;
+  }
+  body.has-ticker .hero { padding-top: 180px !important; }
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 68px) !important;
+    line-height: 1.42 !important;
+    text-shadow: 0 4px 22px rgba(0,0,0,.85), 0 0 24px rgba(0,0,0,.5) !important;
+    padding: 0 4px;
+  }
+  .hero p.lead {
+    font-size: 17px !important;
+    text-shadow: 0 2px 12px rgba(0,0,0,.9), 0 0 20px rgba(0,0,0,.7) !important;
+    padding: 0 6px;
+  }
+}
+
+/* 小型スマホ */
+@media (max-width: 480px) {
+  .ticker { height: 32px !important; }
+  .ticker-track {
+    font-size: 10.5px !important;
+    gap: 64px !important;
+    letter-spacing: .2em !important;
+  }
+  body.has-ticker .hero { padding-top: 168px !important; }
+  .hero h1 { font-size: clamp(32px, 10vw, 50px) !important; }
+  .hero p.lead { font-size: 15.5px !important; }
+}
+
+/* 超小型 */
+@media (max-width: 380px) {
+  .ticker-track { font-size: 9.5px !important; gap: 50px !important; }
+  .hero h1 { font-size: 28px !important; }
+  .hero p.lead { font-size: 14.5px !important; }
+}
+
+/* ====================================================
+   TICKER FINAL FIX — 白とオレンジの完全分離 + 交互
+   ==================================================== */
+.ticker {
+  height: 44px !important;
+  padding: 6px 0 !important;
+}
+.ticker-track {
+  font-size: 13px !important;
+  letter-spacing: .25em !important;
+  gap: 0 !important;
+  animation-duration: 80s !important;
+  align-items: center;
+  font-weight: 700 !important;
+}
+/* 白色（英文／.em） */
+.ticker-track .em {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+  display: inline-block;
+  flex-shrink: 0 !important;
+  padding: 0 70px !important;
+  line-height: 1 !important;
+}
+/* 黄色オレンジ（和文／デフォルト） */
+.ticker-track > span:not(.em):not(.dot) {
+  color: #ffb84a !important;
+  text-shadow: 0 0 8px rgba(255,138,28,.25) !important;
+  display: inline-block;
+  flex-shrink: 0 !important;
+  padding: 0 70px !important;
+  line-height: 1 !important;
+}
+/* セパレーター（◆） */
+.ticker-track .dot {
+  color: rgba(255,184,74,.5) !important;
+  margin: 0 !important;
+  font-size: 8px !important;
+  flex-shrink: 0 !important;
+  display: inline-block;
+  line-height: 1 !important;
+}
+
+/* タブレット */
+@media (max-width: 1024px) {
+  .ticker-track .em,
+  .ticker-track > span:not(.em):not(.dot) { padding: 0 56px !important; }
+  .ticker-track { font-size: 12.5px !important; }
+}
+
+/* スマホ */
+@media (max-width: 780px) {
+  .ticker { height: 38px !important; }
+  .ticker-track {
+    font-size: 11.5px !important;
+    letter-spacing: .22em !important;
+    animation-duration: 70s !important;
+  }
+  .ticker-track .em,
+  .ticker-track > span:not(.em):not(.dot) { padding: 0 44px !important; }
+  .ticker-track .dot { font-size: 7px !important; }
+}
+
+/* iPhone */
+@media (max-width: 480px) {
+  .ticker { height: 34px !important; }
+  .ticker-track {
+    font-size: 10.5px !important;
+    letter-spacing: .2em !important;
+  }
+  .ticker-track .em,
+  .ticker-track > span:not(.em):not(.dot) { padding: 0 34px !important; }
+}
+
+/* 超小型 */
+@media (max-width: 380px) {
+  .ticker-track { font-size: 9.5px !important; }
+  .ticker-track .em,
+  .ticker-track > span:not(.em):not(.dot) { padding: 0 26px !important; }
+}
+
+/* ====================================================
+   TICKER — オレンジ・黄色の和文を非表示にして白のみ流す
+   ==================================================== */
+.ticker-track > span:not(.em):not(.dot) { display: none !important; }
+.ticker-track .dot { display: none !important; }
+
+/* 白だけが残るので余白を再調整 */
+.ticker-track .em {
+  padding: 0 90px !important;
+}
+@media (max-width: 780px) {
+  .ticker-track .em { padding: 0 56px !important; }
+}
+@media (max-width: 480px) {
+  .ticker-track .em { padding: 0 40px !important; }
+}
+
+/* ====================================================
+   HERO LEAD ―― 4行ぶん上にシフト
+   ==================================================== */
+.hero p.lead {
+  margin-top: -8em !important;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 780px) {
+  .hero p.lead {
+    margin-top: -7em !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero p.lead {
+    margin-top: -6em !important;
+  }
+}
+
+/* ====================================================
+   SECTION NAV — ティッカーの代わりに各セクションへのボタン
+   ==================================================== */
+.section-nav {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  right: 0;
+  z-index: 48;
+  background: linear-gradient(180deg, rgba(8,10,24,.96), rgba(8,10,24,.85));
+  border-top: 1px solid rgba(245,185,33,.22);
+  border-bottom: 1px solid rgba(245,185,33,.18);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+}
+.section-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.section-nav-inner::-webkit-scrollbar { display: none; }
+
+.sec-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(245,185,33,.06);
+  border: 1px solid rgba(245,185,33,.28);
+  color: #f1e9c8;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .08em;
+  text-decoration: none;
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+.sec-btn:hover {
+  background: rgba(245,185,33,.18);
+  border-color: rgba(245,185,33,.6);
+  color: #fff7c8;
+  transform: translateY(-1px);
+}
+.sec-btn-gold {
+  background: linear-gradient(180deg, #ffe27a, #f5b921);
+  color: #1a0e00 !important;
+  border-color: rgba(180,120,15,.6);
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(245,185,33,.4), inset 0 1px 0 rgba(255,255,255,.6);
+}
+.sec-btn-gold:hover {
+  background: linear-gradient(180deg, #fff, #ffd24a);
+  color: #1a0e00 !important;
+  filter: brightness(1.05);
+}
+
+/* hero スペース確保（セクションナビ分） */
+body.has-ticker .hero { padding-top: 165px !important; }
+
+/* タブレット */
+@media (max-width: 1024px) {
+  .sec-btn { padding: 8px 14px; font-size: 12.5px; }
+  .section-nav-inner { gap: 4px; }
+}
+
+/* スマホ：横スクロール可能なナビ */
+@media (max-width: 780px) {
+  .section-nav { top: 68px; }
+  .section-nav-inner {
+    justify-content: flex-start;
+    padding: 8px 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sec-btn { padding: 8px 14px; font-size: 12px; letter-spacing: .04em; }
+  body.has-ticker .hero { padding-top: 160px !important; }
+}
+
+/* iPhone */
+@media (max-width: 480px) {
+  .sec-btn { padding: 7px 12px; font-size: 11.5px; }
+  .section-nav-inner { gap: 5px; }
+  body.has-ticker .hero { padding-top: 152px !important; }
+}
+
+/* ====================================================
+   MOBILE FINAL FIX — マーカー改行 + ブロック切れ + 余白
+   ==================================================== */
+@media (max-width: 780px) {
+  /* MARK（金色ハイライト）— モバイルで折り返し可能 */
+  .mark, .mark.fire {
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.4 !important;
+    padding: 0 .1em 4px !important;
+    display: inline !important;
+  }
+  .mark::after {
+    height: 2px !important;
+    bottom: -2px !important;
+  }
+
+  /* SHIFTS カード — テキストはみ出し防止 */
+  .shift-card { padding: 28px 18px !important; overflow: visible !important; }
+  .shift-card .num { font-size: 28px !important; margin-bottom: 8px !important; }
+  .shift-card .ttl-old { font-size: 11px !important; margin-bottom: 6px !important; }
+  .shift-card h4 {
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 10px !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+  .shift-card p {
+    font-size: 12.5px !important;
+    line-height: 1.85 !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* DIFF カード */
+  .diff-col { padding: 26px 18px !important; }
+  .diff-col h3 {
+    font-size: 18px !important;
+    word-break: keep-all !important;
+  }
+  .diff-col p, .diff-col ul li {
+    font-size: 13px !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+  .diff-col .summary { font-size: 13px !important; }
+  .diff-col .small { font-size: 11px !important; }
+
+  /* TIMELINE */
+  .t-item p {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* PHILOSOPHY カード */
+  .phil-card { padding: 24px 18px !important; }
+  .phil-card h4 { font-size: 18px !important; }
+  .phil-card p {
+    font-size: 13px !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* SECTION 余白圧縮 */
+  .section { padding: 56px 0 !important; }
+  .whynow { padding: 60px 0 !important; }
+  .diff-section { padding: 60px 0 !important; }
+  .shifts { padding: 60px 0 !important; }
+  .timeline-section { padding: 60px 0 !important; }
+  .image-section { padding: 50px 0 !important; }
+  .philosophy { padding: 60px 0 !important; }
+  .final-cta { padding: 70px 0 !important; }
+
+  /* SEC HEAD 余白 */
+  .sec-head { margin-bottom: 32px !important; }
+  .sec-num { margin-bottom: 24px !important; }
+
+  /* CONTAINER */
+  .container { padding: 0 16px !important; max-width: 100% !important; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px !important; }
+  .section, .whynow, .diff-section, .shifts, .timeline-section,
+  .philosophy, .image-section { padding: 46px 0 !important; }
+  .final-cta { padding: 60px 0 !important; }
+
+  .shift-card, .diff-col, .phil-card { padding: 22px 16px !important; }
+  .shift-card h4, .diff-col h3, .phil-card h4 { font-size: 17px !important; }
+  .shift-card p, .diff-col p, .phil-card p { font-size: 12px !important; }
+}
+
+/* ====================================================
+   CRITICAL FIX — H1/leadのかぶり解消 + ブロック切れ防止
+   全画面サイズに適用（直前の-8emシフトを完全撤回）
+   ==================================================== */
+
+/* グローバル：横スクロール完全封印 */
+html, body { overflow-x: hidden !important; max-width: 100vw !important; }
+
+/* 重要：lead の負マージンを完全撤回。普通の流れに戻す */
+.hero p.lead {
+  margin-top: 24px !important;
+  margin-bottom: 36px !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+/* HERO H1 の下マージンを詰めて、lead が自然に上に来るように */
+.hero h1 { margin-bottom: 16px !important; }
+
+/* HERO padding-top を圧縮して全体を上に */
+.hero { padding-top: 110px !important; padding-bottom: 70px !important; }
+body.has-ticker .hero { padding-top: 130px !important; }
+
+/* HERO 巨大装飾「LIFE」が文字に被らないように透明度ダウン */
+.hero-massive {
+  opacity: 0.32 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* HERO INNER は z-index 10 で完全に上に */
+.hero-inner { z-index: 10 !important; position: relative !important; }
+
+/* ── スマホ：ブロック切れ対策の徹底 ── */
+@media (max-width: 780px) {
+  /* レイアウト系：すべて100%幅で確実に収める */
+  .container { padding: 0 16px !important; max-width: 100% !important; box-sizing: border-box !important; }
+  .section, section { padding: 50px 0 !important; box-sizing: border-box !important; }
+
+  /* HERO 圧縮 */
+  .hero { padding: 100px 0 40px !important; }
+  body.has-ticker .hero { padding-top: 130px !important; }
+  .hero p.lead {
+    margin-top: 18px !important;
+    margin-bottom: 28px !important;
+    font-size: 15.5px !important;
+    line-height: 1.95 !important;
+    padding: 0 4px !important;
+  }
+  .hero h1 {
+    margin-bottom: 12px !important;
+    font-size: clamp(28px, 8.4vw, 48px) !important;
+    line-height: 1.42 !important;
+  }
+  .hero-massive { font-size: clamp(80px, 26vw, 160px) !important; opacity: 0.25 !important; top: 14% !important; }
+
+  /* セクション見出しの溢れ防止 */
+  .sec-title, h2 {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+    padding: 0 4px !important;
+  }
+
+  /* カード系：全て同じルール */
+  .shift-card, .diff-col, .phil-card, .t-item {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* タイムラインのレール位置調整 */
+  .timeline { padding-left: 0 !important; }
+  .t-item { padding-left: 44px !important; padding-right: 4px !important; }
+  .timeline::before { left: 16px !important; }
+  .t-item .dot { left: 9px !important; }
+
+  /* big quote */
+  .bigquote {
+    font-size: clamp(15px, 4.8vw, 22px) !important;
+    padding: 0 8px !important;
+    line-height: 1.7 !important;
+  }
+}
+
+/* iPhone */
+@media (max-width: 480px) {
+  .container { padding: 0 12px !important; }
+  .hero h1 { font-size: clamp(24px, 8vw, 38px) !important; }
+  .hero p.lead { font-size: 14.5px !important; }
+  .shift-card, .diff-col, .phil-card { padding: 22px 14px !important; }
+}
+
+/* 360px以下 */
+@media (max-width: 360px) {
+  .container { padding: 0 10px !important; }
+  .hero h1 { font-size: 22px !important; }
+  .shift-card, .diff-col, .phil-card { padding: 20px 12px !important; }
+}
+
+/* ====================================================
+   FINAL BLOCK CUT FIX — 全ブロック切れ強制防止
+   ==================================================== */
+@media (max-width: 780px) {
+  /* 全ての要素に強制 box-sizing と max-width */
+  *, *::before, *::after { box-sizing: border-box !important; }
+  body, .container, section, .section,
+  header, footer, nav, aside, article, main,
+  .hero, .hero-inner, .hero-cta,
+  .whynow, .diff-section, .shifts, .timeline-section,
+  .image-section, .philosophy, .final-cta,
+  .shift-grid, .diff-wrap, .diff-row, .diff-col,
+  .timeline, .t-item, .phil-grid, .phil-card,
+  .shift-card, .bigquote, .sec-head {
+    max-width: 100vw !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* 巨大装飾文字を強制的に画面内に */
+  .giant-label, .timeline-label, .hero-massive {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    padding: 0 8px !important;
+  }
+
+  /* ヒーローのCTAボタンが画面に収まるように */
+  .hero-cta {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 24px auto 0 !important;
+    gap: 12px !important;
+  }
+  .hero-cta .btn { width: 100% !important; justify-content: center !important; }
+
+  /* SHIFT CARDS — 4列グリッドが画面外に出ないように */
+  .shift-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 0 !important;
+  }
+  .shift-card { width: 100% !important; padding: 24px 18px !important; }
+
+  /* DIFF —— 比較ブロック */
+  .diff-wrap, .diff-row {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+  .diff-col { width: 100% !important; padding: 24px 16px !important; }
+  .row-diff { grid-template-columns: 1fr !important; gap: 4px !important; }
+  .row-mid { padding: 8px 0 !important; }
+  .row-mid::before { content: "▼" !important; display: block !important; text-align: center !important; }
+  .row-side {
+    border-right: 0 !important;
+    border-bottom: 1px dashed rgba(155,149,128,.25) !important;
+    padding: 14px 6px !important;
+  }
+
+  /* PHILOSOPHY */
+  .phil-grid { grid-template-columns: 1fr !important; gap: 14px !important; width: 100% !important; }
+  .phil-card { width: 100% !important; padding: 22px 16px !important; }
+
+  /* TIMELINE */
+  .timeline { width: 100% !important; padding: 12px 0 !important; }
+  .t-item { padding: 14px 6px 22px 44px !important; }
+  .timeline::before { left: 14px !important; }
+  .t-item .dot { left: 7px !important; width: 16px !important; height: 16px !important; }
+
+  /* FINAL CTA — ボタン縦並び */
+  .final-cta .actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 30px auto 0 !important;
+  }
+  .final-cta .actions .btn { width: 100% !important; justify-content: center !important; }
+
+  /* sticky-cta 縦圧縮 */
+  .sticky-cta {
+    padding: 6px 8px !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+  }
+  .sticky-cta a {
+    padding: 9px 8px !important;
+    font-size: 11.5px !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+    letter-spacing: 0 !important;
+  }
+
+  /* Container padding */
+  .container { padding: 0 14px !important; }
+
+  /* セクションナビボタンの折返し対策 */
+  .section-nav-inner {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    padding: 8px 14px !important;
+  }
+  .sec-btn {
+    flex-shrink: 0 !important;
+    min-width: max-content !important;
+    padding: 7px 14px !important;
+    font-size: 11.5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 12px !important; }
+  .shift-card, .diff-col, .phil-card { padding: 20px 14px !important; }
+  .hero-cta { max-width: 100% !important; }
+  .final-cta .actions { max-width: 100% !important; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 10px !important; }
+  .shift-card h4, .diff-col h3, .phil-card h4 { font-size: 16px !important; }
+  .shift-card p, .diff-col p, .phil-card p { font-size: 12px !important; }
+}
+
+/* ====================================================
+   GLOBAL LINE BREAK FIX — 変な改行を全画面サイズで防止
+   ==================================================== */
+body, p, h1, h2, h3, h4, h5, h6, span, li, a,
+.section-title, .problem-title, .redefine-headline,
+.closing-emphasis, .cta-mega, .family-headline,
+.hero-tagline, .declaration-line, .benefits-mega,
+.mission-line, .mission-final, .mission-stack-line,
+.card-title, .card-desc, .step-title, .step-desc,
+.benefits-list li, .benefits-summary p,
+.hero h1, .hero p.lead, .bigquote,
+.shift-card h4, .shift-card p,
+.diff-col h3, .diff-col p,
+.phil-card h4, .phil-card p,
+.t-item .title, .t-item p,
+.lead-jp, .body-jp,
+.sec-title, .sec-sub,
+.eyebrow, .marker, .mark, .mark.fire,
+.about-headline, .about-jp, .about-lead, .about-value,
+.row .val {
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  line-break: strict !important;
+  hanging-punctuation: allow-end !important;
+}
+
+/* マーカー系：改行を許可（句読点だけ別行に取り残されないように） */
+.marker, .mark, .mark.fire {
+  white-space: normal !important;
+  display: inline !important;
+}
+
+/* ====================================================
+   ULTIMATE MOBILE OVERRIDE — 全リセット＆最終調整
+   （これより上のすべての @media を上書き）
+   ==================================================== */
+@media (max-width: 780px) {
+  /* リセット：全要素 */
+  html, body { overflow-x: hidden !important; max-width: 100vw !important; width: 100% !important; }
+  *, *::before, *::after { box-sizing: border-box !important; max-width: 100% !important; }
+
+  /* SECTION 系：絶対に重ならないように clear */
+  section, .section, header, footer, main, article, aside {
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 50px 0 !important;
+    min-height: auto !important;
+    display: block !important;
+    clear: both !important;
+  }
+  /* HERO だけは特別（ヒーロー画像を表示するため） */
+  header.hero, .hero {
+    padding: 100px 0 40px !important;
+  }
+
+  /* container：横はみ出し絶対なし */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 18px !important;
+  }
+
+  /* マーカー・ハイライトの改行ルール */
+  .marker, .mark, .mark.fire, mark {
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    display: inline !important;
+    padding: 0 .15em !important;
+    line-height: 1.5 !important;
+  }
+
+  /* 全テキストの改行設定 */
+  h1, h2, h3, h4, h5, h6, p, li, span, a, div {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+  }
+
+  /* HARDCODED <br> をスマホでは保持しつつ改行を強制しない */
+  br { line-height: inherit !important; }
+
+  /* 巨大装飾文字：絶対に画面外に出ない */
+  .hero-mega, .hero-massive,
+  .problem-mega-bg, .declaration-mega, .footer-mega,
+  .redefine-mega, .cta-mega, .closing-mega,
+  .def-megaword, .steps-megaword, .benefits-mega,
+  .mission-bg-text, .family-mega,
+  .giant-label, .timeline-label {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    word-break: break-all !important;
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    text-align: center !important;
+    pointer-events: none !important;
+  }
+
+  /* グリッド：すべて1カラム */
+  .cards-grid, .shift-grid, .diff-wrap, .diff-row,
+  .phil-grid, .about-head, .steps-header, .def-header,
+  .benefits-grid, .about-grid, .pillar-row, .hero-grid,
+  .hero-bottom, .cta-step-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  /* CARD 系：余白統一 */
+  .card, .shift-card, .diff-col, .phil-card, .pillar-circle,
+  .benefits-summary, .cta-form-card, .trust-badge {
+    width: 100% !important;
+    padding: 24px 18px !important;
+    margin: 0 !important;
+  }
+
+  /* H1, H2 のmargin制御：ブロック詰まり防止 */
+  h1, h2, h3 { margin-bottom: 16px !important; margin-top: 0 !important; }
+  p { margin-bottom: 14px !important; }
+  p:last-child { margin-bottom: 0 !important; }
+
+  /* CTA・フォーム：縦並び */
+  .cta-wrap, .hero-cta, .final-cta .actions, .form-action-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 18px auto 0 !important;
+    gap: 10px !important;
+  }
+  .btn, .cta-wrap .btn, .hero-cta .btn, .final-cta .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    padding: 16px 22px !important;
+    font-size: 15px !important;
+  }
+
+  /* 巨大ヒーロー文字を圧縮 */
+  .hero-mega { font-size: clamp(50px, 14vw, 90px) !important; line-height: .9 !important; }
+  .hero-massive { font-size: clamp(72px, 22vw, 130px) !important; opacity: .25 !important; top: 16% !important; }
+
+  /* 見出しサイズ */
+  .section-title, .problem-title, .redefine-headline,
+  .closing-emphasis, .family-headline, .cta-mega,
+  .sec-title, h2.sec-title {
+    font-size: clamp(22px, 6.5vw, 34px) !important;
+    line-height: 1.5 !important;
+  }
+  .hero-tagline, .hero h1 {
+    font-size: clamp(28px, 8vw, 44px) !important;
+    line-height: 1.4 !important;
+  }
+
+  /* 本文サイズ */
+  .hero-jp, .hero p.lead, .body-jp, .lead-jp,
+  .definition-text, .problem-line, .redefine-body,
+  .declaration-line, .mission-line, .benefits-jp,
+  .closing-sub, .cta-body, .family-sub {
+    font-size: clamp(14px, 4vw, 17px) !important;
+    line-height: 1.95 !important;
+  }
+
+  /* 流れるバナー：あれば調整 */
+  .ticker, .marquee, .marquee-banner { height: auto !important; }
+
+  /* セクションナビ（whynow） */
+  .section-nav-inner {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+  }
+  .sec-btn { flex-shrink: 0 !important; min-width: max-content !important; padding: 7px 14px !important; }
+
+  /* TIMELINE（whynow） */
+  .timeline { padding: 12px 0 !important; }
+  .t-item { padding: 14px 4px 22px 44px !important; }
+  .timeline::before { left: 14px !important; }
+  .t-item .dot { left: 7px !important; width: 16px !important; height: 16px !important; }
+
+  /* ROW（index2 会社概要表） */
+  .row, .about-row, .cta-form-row {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    padding: 16px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px !important; }
+  section, .section { padding: 40px 0 !important; }
+  header.hero, .hero { padding: 90px 0 30px !important; }
+  .card, .shift-card, .diff-col, .phil-card, .cta-form-card { padding: 20px 14px !important; }
+  .cta-wrap, .hero-cta, .final-cta .actions, .form-action-buttons { max-width: 100% !important; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 12px !important; }
+}
+
+/* ====================================================
+   CLARITY FIX — 装飾大文字の重なり解消 + ボタン明確化
+   ==================================================== */
+@media (max-width: 780px) {
+  /* スマホでは装飾の巨大英文字を完全に非表示
+     これで「SIX PILLARS」「STEPS」「CHANGE」等が見出しと重ならなくなる */
+  .def-megaword,
+  .steps-megaword,
+  .benefits-mega,
+  .hero-mega,
+  .closing-mega,
+  .cta-mega,
+  .family-mega,
+  .problem-mega-bg,
+  .declaration-mega,
+  .footer-mega,
+  .redefine-mega,
+  .mission-bg-text,
+  .giant-label,
+  .timeline-label,
+  .hero-massive,
+  .about-mega-bg,
+  .about::before {
+    display: none !important;
+  }
+
+  /* セクションヘッダーのグリッドを通常表示に戻す */
+  .def-header,
+  .steps-header,
+  .benefits-grid > div:first-child {
+    display: block !important;
+  }
+
+  /* セクションナビボタン：はっきり見えるように */
+  .sec-btn {
+    background: linear-gradient(180deg, rgba(245,185,33,.18), rgba(245,185,33,.08)) !important;
+    border: 1.5px solid rgba(245,185,33,.65) !important;
+    color: #ffe27a !important;
+    font-weight: 800 !important;
+    padding: 9px 16px !important;
+    font-size: 12.5px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,235,180,.2) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5) !important;
+  }
+  .sec-btn:hover {
+    background: linear-gradient(180deg, #ffe27a, #f5b921) !important;
+    color: #1a0e00 !important;
+    border-color: #ffe27a !important;
+  }
+
+  /* セクションナビバー全体：背景を強くしてボタンを引き立てる */
+  .section-nav {
+    background: linear-gradient(180deg, rgba(8,10,24,.98), rgba(8,10,24,.92)) !important;
+    border-bottom: 2px solid rgba(245,185,33,.4) !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,.6) !important;
+  }
+
+  /* SHIFT/カード系：「EVOLUTION」など装飾の bleed 防止 */
+  .shifts::before, .shifts::after,
+  .timeline-section .giant-label,
+  .image-section::before {
+    opacity: 0.15 !important;
+    z-index: 0 !important;
+  }
+
+  /* 決定版：すべてのカード/ブロックが overflow しないよう徹底 */
+  .shift-card, .diff-col, .phil-card, .card, .pillar-circle,
+  .benefits-summary, .cta-form-card, .trust-badge, .t-item {
+    overflow: visible !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+  .shift-card *, .diff-col *, .phil-card *, .card *, .t-item * {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+
+  /* 結論ボックスのテキストが詰まらないように */
+  .verdict, .conclusion, .summary-box {
+    padding: 24px 18px !important;
+    line-height: 1.85 !important;
+  }
+}
+</style>
+</head>
+<body class="has-ticker">
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="logo.png" alt="人生支援経営協会">
+      <div class="b-text">人生支援経営協会<small>LIFE SUPPORT MANAGEMENT</small></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html#hero">トップ</a>
+      <a href="whynow.html#top">今こそ経営の変革へ</a>
+      <a href="index2.html">会社概要</a>
+      <a href="index.html#cta" class="nav-cta">お問い合わせ</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="deco">— MENU</div>
+  <a href="index.html#hero">トップ</a>
+  <a href="whynow.html#top">今こそ経営の変革へ</a>
+  <a href="index2.html">会社概要</a>
+  <a href="index.html#cta" class="cta">お問い合わせ</a>
+</div>
+
+<!-- TICKER -->
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <a href="#top" class="sec-btn">トップ</a>
+    <a href="#whynow" class="sec-btn">なぜ今</a>
+    <a href="#diff" class="sec-btn">違い</a>
+    <a href="#shifts" class="sec-btn">4つの提案</a>
+    <a href="#philosophy" class="sec-btn">理念</a>
+  </div>
+</div>
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-massive">L&nbsp;I&nbsp;F&nbsp;<span class="em">E</span></div>
+  <div class="hero-inner reveal">
+    <span class="eyebrow">A NEW PARADIGM ― 2026</span>
+    <h1 class="serif">
+      <span class="mask-line"><span class="mask-inner"><span class="strike grey-text">健康経営</span>は、もう古い。</span></span>
+      <span class="mask-line"><span class="mask-inner"><span class="fire-text">人生支援経営</span>の時代へ。</span></span>
+    </h1>
+    <p class="lead">
+      "身体" を診る経営から、<span class="mark">"人生" を支える経営</span>へ。<br>
+      この10年で、勝つ会社の定義が決定的に変わった。<br>
+      <strong style="color:var(--gold-2)">「健康経営」</strong>と<strong style="color:#ffae6e">「人生支援経営」</strong> ―― その違いを、<span class="mark fire">今ここで、はっきりさせる</span>。
+    </p>
+    <div class="hero-cta">
+      <a href="#diff" class="btn btn-gold">違いを見る</a>
+      <a href="index.html#cta" class="btn btn-ghost">資料請求</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">SCROLL ▼</div>
+</header>
+
+<!-- WHY NOW -->
+<section class="section whynow" id="whynow">
+  <div class="giant-label">WHY&nbsp;NOW</div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">WHY NOW</div>
+      <h2 class="sec-title serif">
+        健康経営は、間違っていない。<br>
+        <span class="fire-text">ただ、もう<span class="mark fire">"足りない"</span>。</span>
+      </h2>
+    </div>
+    <p class="lede reveal">
+      この20年、企業は「社員の健康」に投資してきた。<br>
+      健康診断、ストレスチェック、福利厚生、運動補助 ――。<br>
+      <span class="mark">それでも、社員は辞める。それでも、不安は消えない。</span><br>
+      なぜか？ ―― 答えはひとつ。
+    </p>
+    <p class="verdict reveal">
+      <span class="grey-text">健康経営は</span><br>
+      <span class="fire-text">"健康状態"</span> しか診ていなかった。<br>
+      <span style="display:block;margin-top:18px;font-size:.7em;color:#cfc6a4">社員が抱えている不安は ― 健康状態だけでなく、<span class="gold-text">"人生全体"</span> に及んでいる。</span>
+    </p>
+  </div>
+</section>
+
+<!-- DIFF -->
+<section class="section diff-section" id="diff">
+  <div class="giant-label">DIFFERENCE</div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">THE DIFFERENCE</div>
+      <h2 class="sec-title serif">
+        健康経営 と <span class="fire-text">人生支援経営</span>。<br>
+        ―― <span class="mark">ここまで違う</span>。
+      </h2>
+    </div>
+
+    <div class="diff-wrap reveal">
+      <div class="diff-col old" data-bg="BEFORE">
+        <span class="diff-tag">YESTERDAY ― 2005〜2025</span>
+        <h3><span class="small">これまでの</span>健康経営</h3>
+        <p class="summary">社員の "身体の健康" を守るための経営。<br>診断・ストレスチェック・福利厚生で <strong>"病気にならない会社"</strong> を目指してきた。</p>
+        <ul class="diff-list">
+          <li><span class="ico">○</span><div><strong>守る対象：</strong>身体の健康</div></li>
+          <li><span class="ico">○</span><div><strong>視野の長さ：</strong>勤務時間内</div></li>
+          <li><span class="ico">○</span><div><strong>提供するもの：</strong>診断・制度・補助金</div></li>
+          <li><span class="ico">○</span><div><strong>社員に届く範囲：</strong>本人のみ</div></li>
+          <li><span class="ico">○</span><div><strong>離職への効き目：</strong>限定的（不安は残る）</div></li>
+          <li><span class="ico">○</span><div><strong>会社の役割：</strong>"働く場所" の提供</div></li>
+        </ul>
+        <div class="footer-line">結論：身体は守れた。― でも、人生は守れていない。</div>
+      </div>
+
+      <div class="diff-arrow"><span class="a">▶</span></div>
+
+      <div class="diff-col new" data-bg="AFTER">
+        <span class="diff-tag">NOW ― 2026〜</span>
+        <h3 class="fire-text"><span class="small gold-text">これからの</span>人生支援経営</h3>
+        <p class="summary">社員の "人生まるごと" を支える経営。<br>教育・診断・AI・相談・実行で <strong style="color:var(--gold-2)">"人生に強い会社"</strong> をつくる、新しい経営OS。</p>
+        <ul class="diff-list">
+          <li><span class="ico">✓</span><div><strong>守る対象：</strong><span style="color:var(--gold-2)">人生そのもの（家計・住まい・将来・家族）</span></div></li>
+          <li><span class="ico">✓</span><div><strong>視野の長さ：</strong>退職後・老後まで</div></li>
+          <li><span class="ico">✓</span><div><strong>提供するもの：</strong>判断軸・伴走・実行支援</div></li>
+          <li><span class="ico">✓</span><div><strong>社員に届く範囲：</strong>本人＋家族・地域へ波及</div></li>
+          <li><span class="ico">✓</span><div><strong>離職への効き目：</strong>構造的に下がる</div></li>
+          <li><span class="ico">✓</span><div><strong>会社の役割：</strong><span style="color:var(--gold-2)">"人生のインフラ"</span> へ昇格</div></li>
+        </ul>
+        <div class="footer-line">結論：身体も、心も、人生も。― 全部、守れる会社になる。</div>
+      </div>
+    </div>
+
+    <div class="row-diffs reveal">
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>社員の "今日の体調" を整える。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>社員の "10年後の人生" まで整える。</div>
+      </div>
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>福利厚生を "足す"。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>人生の "判断軸" を通す。</div>
+      </div>
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>病気にならないように、防ぐ。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>自分の人生を、自分で選べるようにする。</div>
+      </div>
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>"人を雇う場所" としての会社。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>"人生を守る場所" としての会社。</div>
+      </div>
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>給料・夢・ビジョンを "与える"。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>人生の "選択肢" を、社員に渡す。</div>
+      </div>
+      <div class="row-diff">
+        <div class="row-side old"><span class="label">BEFORE / 健康経営</span>会社のための "投資"。</div>
+        <div class="row-mid"><span class="a">▶</span></div>
+        <div class="row-side new"><span class="label">AFTER / 人生支援経営</span>社員と家族のための "インフラ"。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHIFTS -->
+<section class="section shifts" id="shifts">
+  <div class="giant-label">SHIFT</div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">4 PARADIGM SHIFTS</div>
+      <h2 class="sec-title serif">違いの本質は、<span class="gold-text">この<span class="mark">4つの提案</span>。</span></h2>
+      <p class="sec-sub">小手先のアップデートではない、経営OSの書き換え。</p>
+    </div>
+    <div class="shift-grid reveal">
+      <div class="shift-card">
+        <div class="num">01</div>
+        <div class="ttl-old">守るのは "身体"</div>
+        <h4>守る対象が、<br><span class="fire-text">"人生"</span> に拡張する。</h4>
+        <p>診断・運動・メンタルケアの先へ。家計、住まい、保険、老後 ― 社員が "人生で抱える全部" を経営の射程に。</p>
+      </div>
+      <div class="shift-card">
+        <div class="num">02</div>
+        <div class="ttl-old">時間軸は "勤務中"</div>
+        <h4>時間軸が、<br><span class="fire-text">"老後"</span> まで伸びる。</h4>
+        <p>"今日のパフォーマンス" のためでなく、"30年後の安心" のために設計する。これが採用力にも、エンゲージメントにも効く。</p>
+      </div>
+      <div class="shift-card">
+        <div class="num">03</div>
+        <div class="ttl-old">届くのは "社員本人"</div>
+        <h4>届く範囲が、<br><span class="fire-text">"家族"</span> に広がる。</h4>
+        <p>社員の不安は、家庭から来る。家計や住まいの安心が整って初めて、仕事の集中も続く。家族が安心する会社が、勝つ。</p>
+      </div>
+      <div class="shift-card">
+        <div class="num">04</div>
+        <div class="ttl-old">役割は "雇う場所"</div>
+        <h4>会社の役割が、<br><span class="fire-text">"インフラ"</span> になる。</h4>
+        <p>給料を払う場所から、人生を守る場所へ。社員にとって "ここを辞める理由がない場所"。それが、これからの強い会社の姿。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section timeline-section">
+  <div class="giant-label">EVOLUTION</div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">EVOLUTION</div>
+      <h2 class="sec-title serif">経営は、<span class="gold-text">こうやって<span class="mark">進化してきた</span>。</span></h2>
+      <p class="sec-sub">― そして次は、ここに来る。</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="t-item past"><div class="dot"></div><div class="era">1990s ―</div><div class="title">福利厚生の時代</div><p>家賃補助、社員旅行、社員食堂。"いい会社" の証は、制度の数だった。</p></div>
+      <div class="t-item past"><div class="dot"></div><div class="era">2000s ―</div><div class="title">コンプライアンス経営</div><p>労働時間、ハラスメント、メンタル。"問題を起こさない会社" が評価された時代。</p></div>
+      <div class="t-item past"><div class="dot"></div><div class="era">2010s ―</div><div class="title">健康経営</div><p>経済産業省の認定制度がスタート。社員の身体を守ることが、競争力になった。</p></div>
+      <div class="t-item"><div class="dot"></div><div class="era">2026 ―</div><div class="title gold-text">人生支援経営</div><p>ここまで来た。― 社員の身体だけじゃなく、人生まで支える。<strong style="color:var(--gold-2)">勝つ会社の定義が、もう一段深くなる。</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section philosophy" id="philosophy">
+  <div class="giant-label">ESSENCE</div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">ESSENCE</div>
+      <h2 class="sec-title serif">違いは、<span class="fire-text"><span class="mark fire">"思想"</span></span> から生まれる。</h2>
+      <p class="sec-sub">機能を比べても、本当の差はわからない。</p>
+    </div>
+    <div class="phil-grid reveal">
+      <div class="phil-card" style="border-color:rgba(155,149,128,.3)">
+        <div class="q grey-text">"</div>
+        <h4 class="grey-text">健康経営の前提</h4>
+        <p class="grey-text">「会社は、社員の<strong>働く時間</strong>に責任を持つ」<br><br>勤務時間内のリスクを下げる。給料を払う。それ以外は社員の自己責任 ―― これが、これまでのスタンダード。</p>
+        <span class="key" style="background:rgba(155,149,128,.08);color:#9b9580;border-color:rgba(155,149,128,.3)">"労働" を見る経営</span>
+      </div>
+      <div class="phil-card">
+        <div class="q gold-text">"</div>
+        <h4 class="gold-text">人生支援経営の前提</h4>
+        <p>「社員が会社で過ごす時間より、<strong style="color:var(--gold-2)">"人生を生きている時間"</strong> の方が、圧倒的に長い」<br><br>だから、人生に関与する。― 管理ではなく、仕組みで。それが企業の本当の競争力になる。</p>
+        <span class="key">"人生" を見る経営</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG QUOTE -->
+<section class="image-section">
+  <div class="bigquote reveal">
+    <span class="kicker">CHANGE THE VERDICT</span>
+    「うちは <span class="grey-text" style="text-decoration:line-through;text-decoration-color:rgba(226,58,14,.5)">健康経営</span> やってます」じゃ、<br>もう、勝てない。<br><br>
+    「うちは社員の <span class="fire-text">人生まで面倒見てます</span>」が、<br>これからの強い会社の答え。
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-logo">
+        <img src="logo.png" alt="人生支援経営協会 認定ロゴ">
+      </div>
+      <div>
+        <div class="sec-eyebrow">ABOUT</div>
+        <h3 class="gold-text">人生支援経営協会について</h3>
+        <p>私たち <strong>人生支援経営協会</strong> は、健康経営の "次のステージ" として、<strong style="color:var(--gold-2)">人生支援経営</strong> を提唱・普及する団体です。</p>
+        <p>社員の身体だけでなく、人生まで支える経営を実践する企業を、私たちは <strong>「人生支援経営法人」</strong> として認定し、社会のスタンダードとして広げていきます。</p>
+        <p>― それは、<strong style="color:#ffae6e">勝つ会社の定義を、もう一段深くする</strong>取り組みです。</p>
+        <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
+          <a href="index.html#cta" class="btn btn-gold">資料請求する</a>
+          <a href="index.html#cta" class="btn btn-ghost">認定について相談する</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contact">
+  <div class="giant-label" style="top:-10px;-webkit-text-stroke:1px rgba(255,120,30,.18)">CONTACT</div>
+  <div class="container">
+    <h2>
+      <span class="grey-text" style="text-decoration:line-through;text-decoration-color:rgba(226,58,14,.6);text-decoration-thickness:4px">健康経営で終わるな。</span><br>
+      <span class="fire-text">人生まで、<span class="mark fire">変えろ</span>。</span>
+    </h2>
+    <p class="sub">あなたの会社は、社員の "身体" を守る会社か。<br>それとも、"人生" を守る会社か。</p>
+    <div class="actions">
+      <a href="mailto:info@example.com" class="btn btn-gold">無料相談・資料請求</a>
+      <a href="#diff" class="btn btn-ghost">違いをもう一度見る</a>
+    </div>
+    <p style="margin-top:30px;color:#a89c70;font-size:13px;letter-spacing:.1em;position:relative;z-index:2">※ 経済産業省 健康経営優良法人認定の "次の一手" として、多数の経営者が動き始めています。</p>
+  </div>
+</section>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="index.html#cta" class="pri">無料相談・資料請求</a>
+  <a href="#diff" class="sec">違いをもう一度見る</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="brand">
+      <img src="logo.png" alt="人生支援経営協会" style="height:60px;background:#fff;padding:6px;border-radius:8px">
+    </div>
+    <div class="links">
+      <a href="index.html#hero">トップ</a>
+      <a href="whynow.html#top">今こそ経営の変革へ</a>
+      <a href="index2.html">会社概要</a>
+      <a href="index.html#cta">お問い合わせ</a>
+    </div>
+    <p class="copyright">© 2026 人生支援経営協会 / Life Support Management Association. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// HAMBURGER MENU
+(function(){
+  const ham=document.getElementById('hamburger');
+  const mob=document.getElementById('mobileNav');
+  if(!ham||!mob)return;
+  function toggle(){
+    const open=mob.classList.toggle('open');
+    ham.classList.toggle('open',open);
+    ham.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  }
+  ham.addEventListener('click',toggle);
+  mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    mob.classList.remove('open');ham.classList.remove('open');document.body.style.overflow='';
+  }));
+})();
+
+// reveal observer
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// mark sweep
+const markIO=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const idx=parseInt(e.target.dataset.markIdx||0,10);
+      setTimeout(()=>e.target.classList.add('in'),idx*60);
+      markIO.unobserve(e.target);
+    }
+  });
+},{threshold:.25,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.mark-sweep,.mark').forEach((el,i)=>{el.dataset.markIdx=i;markIO.observe(el);});
+
+// custom cursor (desktop only)
+if(window.matchMedia('(hover:hover)').matches){
+  const dot=document.querySelector('.cursor-dot');
+  const ring=document.querySelector('.cursor-ring');
+  if(dot&&ring){
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`;});
+    (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;requestAnimationFrame(loop);})();
+  }
+}
+
+// sticky CTA show on scroll
+window.addEventListener('scroll',()=>{
+  const s=document.querySelector('.sticky-cta');
+  if(!s)return;
+  s.classList.toggle('show',window.scrollY>600);
+});
+</script>
+
+</body>
+</html>
+                                                                                 
